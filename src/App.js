@@ -3,6 +3,7 @@ import './App.css';
 import AddSmartPhone from './components/AddSmartPhone';
 import SearchSmartphone from './components/SearchSmartphone';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import DeleteSmartphone from './components/DeleteSmartphone';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
    <Routes>
     <Route path="/" element={<AddSmartPhone/>}/>
     <Route path="/search" element={<SearchSmartphone/>}/>
+    <Route path="/delete" element={<DeleteSmartphone/>}/>
    </Routes>
    </BrowserRouter>
   );
